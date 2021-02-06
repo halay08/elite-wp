@@ -1,0 +1,7 @@
+*
+!.gitignore
+!index.php
+!ecademy
+!ecademy/**
+!ecademy-child
+!ecademy-child/**

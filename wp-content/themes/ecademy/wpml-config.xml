@@ -1,0 +1,39 @@
+<wpml-config>
+    <admin-texts>
+        <key name="ecademy_opt">
+            <key name="search_placeholder_text" />
+            <key name="login_register_title" />
+            <key name="profile_text" />
+            <key name="popup_title" />
+            <key name="popup_place" />
+            <key name="popup_button_text" />
+            <key name="blog_title" />
+            <key name="buy_course_title" />
+            <key name="lessons_title" />
+            <key name="students_title" />
+            <key name="price_title" />
+            <key name="rating_title" />
+            <key name="course_instructor_title" />
+            <key name="student_label" />
+            <key name="lessons_label" />
+            <key name="duration_label" />
+            <key name="access_label" />
+            <key name="enrolled_label" />
+            <key name="share_course_title" />
+            <key name="related_courses_title" />
+            <key name="related_post_count" />
+            <key name="enable_social_share_title" />
+            <key name="title_not_found" />
+            <key name="button_two_not_found" />
+            <key name="button_not_found" />
+            <key name="popup_desc" />
+            <key name="popup_bottom_desc" />
+            <key name="footer_desc" />
+            <key name="content_not_found" />
+            <key name="massage_btn_text" />
+            <key name="ld_enroll_title" />
+            <key name="ld_free_title" />
+            <key name="ld_related_courses_title" />
+        </key>
+    </admin-texts>
+</wpml-config>
