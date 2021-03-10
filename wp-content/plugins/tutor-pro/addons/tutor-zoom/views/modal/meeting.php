@@ -55,8 +55,8 @@
                         <div class="meeting-time-separator">-</div>
                         <div class="tutor-quiz-builder-col">
                             <div class="date-range-input">
-                                <input type="text" name="meeting_time" class="tutor_zoom_timepicker readonly" value="<?php echo $start_time; ?>" autocomplete="off" placeholder="08:30 PM" required>
-                                <i class="tutor-icon-clock"></i>
+                                <input type="time" name="meeting_time" class="tutor_zoom_timepicker readonly" value="<?php echo $start_time; ?>" autocomplete="off" placeholder="08:30 PM" required>
+                                <!-- <i class="tutor-icon-clock"></i> -->
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,9 @@
         </div>
     </div>
     <div class="modal-footer">
-        <button type="submit" class="tutor-btn"><?php _e('Save Meeting', 'tutor-pro'); ?></button>
+        <button type="submit" class="tutor-btn" data-toast_error="<?php _e('Error', 'tutor'); ?>" data-toast_error_message="<?php _e('Action Failed', 'tutor'); ?>" data-toast_success="<?php _e('Success', 'tutor'); ?>" data-toast_success_message="<?php _e('Meeting Updated', 'tutor'); ?>">
+            <?php _e('Save Meeting', 'tutor-pro'); ?>
+        </button>
     </div>
 </form>
 

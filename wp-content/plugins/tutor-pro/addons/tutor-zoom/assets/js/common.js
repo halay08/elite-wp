@@ -31,7 +31,7 @@
                 },
                 complete: function () {
                     $that.removeClass('tutor-updating-message');
-                    $('.tutor_zoom_timepicker').timepicker({timeFormat: 'hh:mm TT'});
+                    // $('.tutor_zoom_timepicker').timepicker({timeFormat: 'hh:mm TT'});
                     // init datepicker for create/update meetings
                     $(".tutor_zoom_datepicker").datepicker({
                         monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],

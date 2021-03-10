@@ -43,11 +43,11 @@
     margin-left: -2px;
 }
 .tutor-zoom-lesson-countdown > span {
-    padding: 5px 10px;
+    padding: 5px 10px 5px 0;
     border: 1px solid #DCDBDC;
     border-radius: 3px;
     font-weight: 500;
-    margin-left: 3px;
+    display: flex;
 }
 .tutor-zoom-lesson-countdown > span > span {
     width: auto;
@@ -58,7 +58,7 @@
     background: #ED9700;
     color: #fff;
     padding: 0px 5px;
-    margin-left: 8px;
+    margin-left: 36px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 2px;
@@ -321,4 +321,13 @@
 	border: 1px solid #fcefa1 /*{borderColorHighlight}*/;
 	background: #fbf9ee;
 	color: #363636;
+}
+
+.tutor-course-lesson h5 .tutor-zoom-lesson-countdown {
+    padding: 5px;
+}
+
+.tutor-zoom-lesson-countdown .countdown-section {
+    width: unset;
+    margin-left: 10px;
 }
