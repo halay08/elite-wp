@@ -141,7 +141,7 @@ $is_enrolled = tutor_utils()->is_enrolled($course_id);
 													$lesson_title .= $countdown;
 												}
 
-												echo $lesson_title;
+												echo apply_filters('tutor_course/contents/lesson/title', $lesson_title, get_the_ID());
 											}else{
 												$lesson_title .= get_the_title();
 												$lesson_title .= $play_time ? "<span class='tutor-lesson-duration'>".tutor_utils()->get_optimized_duration($play_time)."</span>" : '';

@@ -63,7 +63,8 @@
         </div>
 
 		<?php
-		include tutor()->path.'views/metabox/video-metabox.php';
+		// include tutor()->path.'views/metabox/video-metabox.php';
+		include get_stylesheet_directory().'/templates/lesson-video-metabox.php';
 		include tutor()->path.'views/metabox/lesson-attachments-metabox.php';
 		?>
 
