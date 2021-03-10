@@ -207,3 +207,18 @@
 .zoom-meetings-container .button-primary:hover, .tutor-zoom-create-meeting .button-primary:hover {
     background-color: #0570A1;
 }
+.tutor-quiz-builder-group input[type="time"] {
+    line-height: 40px;
+    padding: 5px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 40px;
+    margin: 0;
+    width: 100%;
+    color: #393c40;
+    font-size: 14px;
+}

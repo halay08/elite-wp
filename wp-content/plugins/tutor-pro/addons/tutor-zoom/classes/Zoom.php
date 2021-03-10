@@ -191,7 +191,7 @@ class Zoom {
         if (!empty($meeting_data)) {
             $input_date             = \DateTime::createFromFormat('Y-m-d H:i:s', $meeting_start);
             $start_date             = $input_date->format('j M, Y');
-            $start_time             = $input_date->format('h:i A');
+            $start_time             = $input_date->format('H:i');
             $duration               = ($duration_unit=='hr') ? $duration/60 : $duration;
         }
 
@@ -237,7 +237,7 @@ class Zoom {
             $auto_recording             = !empty($_POST['auto_recording']) ? sanitize_text_field($_POST['auto_recording']) : '';
 
 
-            $input_date = \DateTime::createFromFormat('j M, Y h:i A', $start_date.' '.$start_time);
+            $input_date = \DateTime::createFromFormat('j M, Y H:i', $start_date.' '.$start_time);
             $meeting_start =  $input_date->format('Y-m-d\TH:i:s');
 
             $duration = ($duration_unit=='hr') ? $input_duration*60 : $input_duration;
