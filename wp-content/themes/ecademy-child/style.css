@@ -7,3 +7,14 @@
  Template:     ecademy
  Version:      4.4
 */
+
+.event-auth-form .submit.form-row input#wp-submit {
+  width: 100%;
+}
+
+.container .user-login,
+.container .user-register,
+.container .reset-password {
+  max-width: max-content;
+  margin: auto;
+}
