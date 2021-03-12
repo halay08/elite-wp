@@ -108,9 +108,15 @@
         </div>
 
         <div class="tutor-quiz-builder-group">
-            <h4><?php _e('Password', 'tutor-pro'); ?></h4>
             <div class="tutor-quiz-builder-row">
                 <div class="tutor-quiz-builder-col">
+                    <h4><?php _e('Number of students', 'tutor-pro'); ?></h4>
+                    <div class="date-range-input">
+                        <input type="number" name="meeting_max_students" value="<?php echo $max_students; ?>" autocomplete="off" placeholder="Maximum students in this meeting" required>
+                    </div>
+                </div>
+                <div class="tutor-quiz-builder-col">
+                    <h4><?php _e('Password', 'tutor-pro'); ?></h4>
                     <div class="date-range-input">
                         <input type="text" name="meeting_password" value="<?php echo $password; ?>" autocomplete="off" placeholder="Create a Password" required>
                         <i class="tutor-icon-lock"></i>

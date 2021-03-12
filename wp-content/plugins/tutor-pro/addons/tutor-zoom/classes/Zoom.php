@@ -186,6 +186,7 @@ class Zoom {
         $duration                   = !empty($meeting_data) ? $meeting_data['duration'] : 60;
         $duration_unit              = !empty($post) ? get_post_meta($meeting_id, '_tutor_zm_duration_unit', true) : 'min';
         $password                   = !empty($meeting_data) ? $meeting_data['password'] : '';
+        $max_students               = !empty($post) ? get_post_meta($meeting_id, '_tutor_zm_max_students', true) : 0;
         $auto_recording             = !empty($meeting_data) ? $meeting_data['settings']['auto_recording'] : $this->get_settings('auto_recording');
 
         if (!empty($meeting_data)) {
@@ -228,6 +229,7 @@ class Zoom {
             $input_duration             = !empty($_POST['meeting_duration']) ? intval($_POST['meeting_duration']) : 60;
             $duration_unit              = !empty($_POST['meeting_duration_unit']) ? $_POST['meeting_duration_unit'] : 'min';
             $password                   = !empty($_POST['meeting_password']) ? sanitize_text_field($_POST['meeting_password']) : '';
+            $max_students               = !empty($_POST['meeting_max_students']) ? sanitize_text_field($_POST['meeting_max_students']) : 0;
 
             $join_before_host           = ($this->get_settings('join_before_host')) ? true : false;
             $host_video                 = ($this->get_settings('host_video')) ? true : false;
@@ -292,6 +294,7 @@ class Zoom {
                 update_post_meta($post_id, '_tutor_zm_start_datetime', $input_date->format('Y-m-d H:i:s'));
                 update_post_meta($post_id, '_tutor_zm_duration', $input_duration);
                 update_post_meta($post_id, '_tutor_zm_duration_unit', $duration_unit);
+                update_post_meta($post_id, '_tutor_zm_max_students', $max_students);
                 update_post_meta($post_id, $this->zoom_meeting_post_meta, json_encode($saved_meeting));
             }
 
